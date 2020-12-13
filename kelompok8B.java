@@ -1,13 +1,14 @@
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.Random;
 
 public class kelompok8B {
     public static void main(String[] args) throws IOException {
 
         Scanner terminalInput = new Scanner(System.in);
         Scanner terminalInput2 = new Scanner(System.in);
-        String pilihanUser, pilihanUserHewan, pilihanUser2, jumlah1, pilihan, hewan, jenis, totalHarga;
-        int jumlah, harga;
+        String pilihanPembayaran, pilihanUser, pilihanUserHewan, pilihanUser2, jumlah1, pilihan, hewan, jenis, totalHarga;
+        int jumlah, harga, bank;
         boolean isLanjutkan = true;
         jumlah1 = "";
         pilihan = "";
@@ -16,11 +17,14 @@ public class kelompok8B {
         totalHarga = "";
         harga = 0;
 
+
+        
+        clearScreen();
+        System.out.println("===========================================");
+        System.out.println("Selamat Datang Di WareHouse Food Animals");
+        System.out.println("===========================================\n");
+        
         while (isLanjutkan) {
-            clearScreen();
-            System.out.println("===========================================");
-            System.out.println("Selamat Datang Di WareHouse Food Animals");
-            System.out.println("===========================================\n");
             System.out.println("1.\tMakanan Hewan");
             System.out.println("2.\tAksesoris Hewan");
             System.out.println("3.\tPerawatan Hewan");
@@ -345,11 +349,85 @@ public class kelompok8B {
                     System.exit(0);
             }
 
-            isLanjutkan = getYesorNo("Apakah Anda ingin melanjutkan");
+            isLanjutkan = getYesorNo("Apakah Anda ingin mengubah data pembelian??");
+
         }
+        isLanjutkan = getYesorNo("Apakah Anda ingin melanjutkan transaksi?");
+        if (!isLanjutkan) {
+            System.out.println("==============[Terimakasih telah mengunjungi toko kami]==============");
+            System.exit(0);
+        }
+        System.out.println("Metode pembayaran:");
+        System.out.println("1.Pembayaran ditempat");
+        System.out.println("2.kartu kredit");
+        System.out.print("\n\nPilihan anda: ");
+        pilihanPembayaran = terminalInput.next();
+        switch(pilihanPembayaran){
+            case "1":
+                System.out.print("Code Pesanan : ");
+                kode();
+                System.out.println("\nTOTAL HARGA = " + totalHarga );
+                System.out.println("");
+                tatacaraPembayaran1();
+                break;
+            case "2":
+                boolean cek = true;
+                while(cek){
+                    plilihanBANK();
+                    System.out.print("\n\nPilihan anda: ");
+                    bank = terminalInput2.nextInt();
+                    if (bank > 0 && bank < 4) {
+                        System.out.print("CODE PESANAN : ");
+                        kode();
+                        System.out.println("\nTOTAL HARGA = " + totalHarga );
+                        System.out.println("");
+                        tatacaraPembayaran2();
+                        cek = false;
+                    }else{    
+                        System.out.println("\nInput anda tidak ditemukan\nSilahkan pilih [1-3]");
+                    cek = true;
+                    }
+                }
+                break;
+        }
+
 //baru
+         System.out.println("\n==============[Terimakasih telah mengunjungi toko kami]==============");
 
+    }
+    private static void tatacaraPembayaran1(){
+        System.out.println("Cara pembayaran = ");
+        System.out.println("1. Datang ke toko terdekat kami.");
+        System.out.println("2. Temui kasir ditoko.");
+        System.out.println("3. Tunjukan Code pesanan yang tertera di atas.");
+        System.out.println("4. Bayar sesuai harga yang telah diberikan.");
+        System.out.println("5. Lalu transaksi selesai.");
+    }
 
+    private static void tatacaraPembayaran2(){
+        System.out.println("Cara pembayaran = ");
+        System.out.println("1. datangi gerai ATM yang dipili.");
+        System.out.println("2. Kemudian masukan kartu ATM dan PIN.");
+        System.out.println("3. Setelah sukses memasukan pin, kemudian pilih menu Transaksi Lainnya > Transfer > Ke Rek Virtual Account.");
+        System.out.println("4. Masukkan CODE yang tertera atas dan pilih [Benar].");
+        System.out.println("5. Masukkan jumlah pembayaran.");
+        System.out.println("6. Periksa informasi yang tertera di layar. pastikan code yang anda masukan sudah benar. jika benar pilih  [Ya].");
+    }
+    private static void kode(){
+        Random angkaRandom = new Random();
+        for ( int counter = 1; counter <= 6; counter++ ){
+            int hasil = 1 + angkaRandom.nextInt( 9 );
+            System.out.print(hasil);
+            if ( counter % 3 == 0 )
+                System.out.print(" ");
+  
+    } 
+
+    }
+    private static void plilihanBANK(){
+        System.out.println("1.BCA");
+        System.out.println("2.BNI");
+        System.out.println("3.MANDIRI");
     }
     private static int hitung(int harga, int banyak){
         return harga * banyak;
@@ -357,19 +435,19 @@ public class kelompok8B {
 
     private static void perawatanAnjing(){
         System.out.println("\n=================");
-        System.out.println("1.Rawat Inap  \tRp. 90.000");
-        System.out.println("2.Steril   \tRp. 120.000");
-        System.out.println("3.Groming \tRp. 90.000");
-        System.out.println("4.Melahirkan  \tRP. 300.000");
+        System.out.println("1.Rawat Inap  \t\tRp. 90.000");
+        System.out.println("2.Steril   \t\tRp. 120.000");
+        System.out.println("3.Groming \t\tRp. 90.000");
+        System.out.println("4.Melahirkan  \t\tRP. 300.000");
         System.out.println("5.Suntik Rabies  \tRp.130.000");
         System.out.println("6.Suntik Jamur  \tRp.130.0000");
     }
     private static void perawatanKucing(){
         System.out.println("\n=================");
-        System.out.println("1.Rawat Inap  \tRp. 80.000");
-        System.out.println("2.Steril   \tRp. 600.000");
-        System.out.println("3.Groming \tRp. 80.000");
-        System.out.println("4.Melahirkan  \tRP. 300.000");
+        System.out.println("1.Rawat Inap  \t\tRp. 80.000");
+        System.out.println("2.Steril   \t\tRp. 600.000");
+        System.out.println("3.Groming \t\tRp. 80.000");
+        System.out.println("4.Melahirkan  \t\tRP. 300.000");
         System.out.println("5.Suntik Rabies  \tRp.120.000");
         System.out.println("6.Suntik Jamur  \tRp.120.0000");
     }
