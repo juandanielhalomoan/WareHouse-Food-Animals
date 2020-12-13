@@ -3,10 +3,15 @@ Hello Kami Mahasiswa Rekayasa Perangkat Lunak
 Kami Dari Kelompok8B
 
 Nama Anggota
+
 -Azhar Al Ayuby         1402018189
+
 -Juan Daniel Halomoan   1402018193
+
 -Susilo Yudayono        1402018201
+
 -Taubah Alam            1402018221
+
 -Ahmad Budiman          1402018227
 
 Disini kami ingin berbagi pengalaman dalam pembuatan aplikasi sederhana berbasis console menggunakan bahasa pemrograman JAVA 
