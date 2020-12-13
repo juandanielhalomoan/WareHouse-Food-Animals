@@ -44,7 +44,7 @@ public class kelompok8B {
                                     case "1":
                                         jenis = "makanan basah kitten 400 gr";
                                         harga = 21000;
-                                        System.out.print("\n\nBanyaknya makanan yang anda beli: ");
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
@@ -52,7 +52,7 @@ public class kelompok8B {
                                     case "2":
                                         jenis = "makanan basah adult 400 gr";
                                         harga = 22000;
-                                        System.out.print("\n\nBanyaknya makanan yang anda beli: ");
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
@@ -60,7 +60,7 @@ public class kelompok8B {
                                     case "3":
                                         jenis = "makanan kering kitten 400 gr";
                                         harga = 13000;
-                                        System.out.print("\n\nBanyaknya makanan yang anda beli: ");
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
@@ -68,7 +68,7 @@ public class kelompok8B {
                                     case "4":
                                         jenis = "makanan kering adult 400 gr";
                                         harga = 14000;
-                                        System.out.print("\n\nBanyaknya makanan yang anda beli: ");
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
@@ -87,7 +87,7 @@ public class kelompok8B {
                                     case "1":
                                         jenis = "makanan basah kitten 400 gr";
                                         harga = 18000;
-                                        System.out.print("\n\nBanyaknya makanan yang anda beli: ");
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
@@ -95,7 +95,7 @@ public class kelompok8B {
                                     case "2":
                                         jenis = "makanan basah adult 400 gr";
                                         harga = 20000;
-                                        System.out.print("\n\nBanyaknya makanan yang anda beli: ");
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
@@ -103,7 +103,7 @@ public class kelompok8B {
                                     case "3":
                                         jenis = "makanan kering kitten 400 gr";
                                         harga = 12000;
-                                        System.out.print("\n\nBanyaknya makanan yang anda beli: ");
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
@@ -111,7 +111,7 @@ public class kelompok8B {
                                     case "4":
                                         jenis = "makanan kering adult 400 gr";
                                         harga = 13000;
-                                        System.out.print("\n\nBanyaknya makanan yang anda beli: ");
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
@@ -142,7 +142,7 @@ public class kelompok8B {
                                     case "1":
                                         jenis = "Kalung";
                                         harga = 10000;
-                                        System.out.print("\n\nBanyaknya makanan yang anda beli: ");
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
@@ -150,7 +150,7 @@ public class kelompok8B {
                                     case "2":
                                         jenis = "Kacamata";
                                         harga = 15000;
-                                        System.out.print("\n\nBanyaknya makanan yang anda beli: ");
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
@@ -158,7 +158,7 @@ public class kelompok8B {
                                     case "3":
                                         jenis = "Kandang";
                                         harga = 180000;
-                                        System.out.print("\n\nBanyaknya makanan yang anda beli: ");
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
@@ -177,7 +177,7 @@ public class kelompok8B {
                                     case "1":
                                         jenis = "Kalung";
                                         harga = 5000;
-                                        System.out.print("\n\nBanyaknya makanan yang anda beli: ");
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
@@ -185,7 +185,7 @@ public class kelompok8B {
                                     case "2":
                                         jenis = "Kacamata";
                                         harga = 6000;
-                                        System.out.print("\n\nBanyaknya makanan yang anda beli: ");
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
@@ -193,7 +193,7 @@ public class kelompok8B {
                                     case "3":
                                         jenis = "Kandang";
                                         harga = 12000;
-                                        System.out.print("\n\nBanyaknya makanan yang anda beli: ");
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
@@ -225,38 +225,50 @@ public class kelompok8B {
                                     case "1":
                                         jenis = "Rawat Inap";
                                         harga = 90000;
-                                        jumlah1 = "-";
-                                        totalHarga = "Rp. " + harga;
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
+                                        jumlah = terminalInput2.nextInt();
+                                        jumlah1 = "" + jumlah;
+                                        totalHarga = "Rp. " + hitung(harga, jumlah);
                                     break;
                                     case "2":
                                         jenis = "Steril";
                                         harga = 120000;
-                                        jumlah1 = "-";
-                                        totalHarga = "Rp. " + harga;
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
+                                        jumlah = terminalInput2.nextInt();
+                                        jumlah1 = "" + jumlah;
+                                        totalHarga = "Rp. " + hitung(harga, jumlah);
                                     break;
                                     case "3":
                                         jenis = "Grooming";
                                         harga = 90000;
-                                        jumlah1 = "-";
-                                        totalHarga = "Rp. " + harga;
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
+                                        jumlah = terminalInput2.nextInt();
+                                        jumlah1 = "" + jumlah;
+                                        totalHarga = "Rp. " + hitung(harga, jumlah);
                                     break;
                                     case "4":
                                         jenis = "Melahirkan";
                                         harga = 300000;
-                                        jumlah1 = "-";
-                                        totalHarga = "Rp. " + harga;
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
+                                        jumlah = terminalInput2.nextInt();
+                                        jumlah1 = "" + jumlah;
+                                        totalHarga = "Rp. " + hitung(harga, jumlah);
                                     break;
                                     case "5":
                                         jenis = "Suntik Rabies";
                                         harga = 130000;
-                                        jumlah1 = "-";
-                                        totalHarga = "Rp. " + harga;
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
+                                        jumlah = terminalInput2.nextInt();
+                                        jumlah1 = "" + jumlah;
+                                        totalHarga = "Rp. " + hitung(harga, jumlah);
                                     break;
                                     case "6":
                                         jenis = "Suntik Jamur";
                                         harga = 130000;
-                                        jumlah1 = "-";
-                                        totalHarga = "Rp. " + harga;
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
+                                        jumlah = terminalInput2.nextInt();
+                                        jumlah1 = "" + jumlah;
+                                        totalHarga = "Rp. " + hitung(harga, jumlah);
                                     break;
                                     default:
                                     System.out.println("\nInput anda tidak ditemukan\nSilahkan pilih [1-6]");
@@ -272,38 +284,50 @@ public class kelompok8B {
                                     case "1":
                                         jenis = "Rawat Inap";
                                         harga = 80000;
-                                        jumlah1 = "-";
-                                        totalHarga = "Rp. " + harga;
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
+                                        jumlah = terminalInput2.nextInt();
+                                        jumlah1 = "" + jumlah;
+                                        totalHarga = "Rp. " + hitung(harga, jumlah);
                                     break;
                                     case "2":
                                         jenis = "Steril";
                                         harga = 600000;
-                                        jumlah1 = "-";
-                                        totalHarga = "Rp. " + harga;
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
+                                        jumlah = terminalInput2.nextInt();
+                                        jumlah1 = "" + jumlah;
+                                        totalHarga = "Rp. " + hitung(harga, jumlah);
                                     break;
                                     case "3":
                                         jenis = "Grooming";
                                         harga = 80000;
-                                        jumlah1 = "-";
-                                        totalHarga = "Rp. " + harga;
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
+                                        jumlah = terminalInput2.nextInt();
+                                        jumlah1 = "" + jumlah;
+                                        totalHarga = "Rp. " + hitung(harga, jumlah);
                                     break;
                                     case "4":
                                         jenis = "Melahirkan";
                                         harga = 300000;
-                                        jumlah1 = "-";
-                                        totalHarga = "Rp. " + harga;
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
+                                        jumlah = terminalInput2.nextInt();
+                                        jumlah1 = "" + jumlah;
+                                        totalHarga = "Rp. " + hitung(harga, jumlah);
                                     break;
                                     case "5":
                                         jenis = "Suntik Rabies";
                                         harga = 120000;
-                                        jumlah1 = "-";
-                                        totalHarga = "Rp. " + harga;
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
+                                        jumlah = terminalInput2.nextInt();
+                                        jumlah1 = "" + jumlah;
+                                        totalHarga = "Rp. " + hitung(harga, jumlah);
                                     break;
                                     case "6":
                                         jenis = "Suntik Jamur";
                                         harga = 120000;
-                                        jumlah1 = "-";
-                                        totalHarga = "Rp. " + harga;
+                                        System.out.print("\n\nBanyaknya item yang anda beli: ");
+                                        jumlah = terminalInput2.nextInt();
+                                        jumlah1 = "" + jumlah;
+                                        totalHarga = "Rp. " + hitung(harga, jumlah);
                                     break;
                                     default:
                                     System.out.println("\nInput anda tidak ditemukan\nSilahkan pilih [1-6]");
@@ -395,7 +419,6 @@ public class kelompok8B {
         System.out.println("Harga satuan \t\t= " + harga);
         System.out.println("Total harga \t\t= " + totalHarga);
 
-        boolean isTambah = getYesorNo("Apakah Anda ingin mengubah data pembelian?");
     }
 
     private static boolean getYesorNo(String message){
