@@ -1,6 +1,8 @@
 # WareHouse-Food-Animals
-#Kelompok8B
-Nama Kelompok
+
+Rekayasa Perangkat Lunak
+Kelompok Kelompok8B
+Nama Anggota
 -Azhar Al Ayuby         1402018189
 -Juan Daniel Halomoan   1402018193
 -Susilo Yudayono        1402018201
