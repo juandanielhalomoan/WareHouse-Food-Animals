@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import java.util.Random;
 
-public class kelompok8B {
+public class kelompok8B6 {
     public static void main(String[] args) throws IOException {
 
         Scanner terminalInput = new Scanner(System.in);
@@ -10,6 +10,7 @@ public class kelompok8B {
         String pilihanPembayaran, pilihanUser, pilihanUserHewan, pilihanUser2, jumlah1, pilihan, hewan, jenis, totalHarga;
         int jumlah, harga, bank;
         boolean isLanjutkan = true;
+        boolean cek = true;
         jumlah1 = "";
         pilihan = "";
         hewan = "";
@@ -28,7 +29,8 @@ public class kelompok8B {
             System.out.println("1.\tMakanan Hewan");
             System.out.println("2.\tAksesoris Hewan");
             System.out.println("3.\tPerawatan Hewan");
-        
+            while(cek){
+
             System.out.print("\n\nPilihan anda: ");
             pilihanUser = terminalInput.next();
 
@@ -36,12 +38,16 @@ public class kelompok8B {
                 case "1":
                     pilihan = "Makanan";
                     pilihHewan();
+                    while(cek){
+
                     System.out.print("\n\nPilihan anda: ");
                     pilihanUserHewan = terminalInput.next();
                     switch (pilihanUserHewan){
                         case "1":
                             hewan = "Anjing";
                             makananAnjing();
+                            while(cek){
+
                             System.out.print("\n\nPilihan anda: ");
                             pilihanUser2 = terminalInput.next();
                                 switch (pilihanUser2){
@@ -52,6 +58,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "2":
                                         jenis = "makanan basah adult 400 gr";
@@ -60,6 +67,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "3":
                                         jenis = "makanan kering kitten 400 gr";
@@ -68,6 +76,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "4":
                                         jenis = "makanan kering adult 400 gr";
@@ -76,15 +85,19 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     default:
                                     System.out.println("\nInput anda tidak ditemukan\nSilahkan pilih [1-4]");
-                                    System.exit(0);
+                                    cek = true;
                                 }
+                            }
                             break;
                         case "2":
                             hewan = "Kucing";
                             makananKucing();
+                            while(cek){
+
                             System.out.print("\n\nPilihan anda: ");
                             pilihanUser2 = terminalInput.next();
                             switch (pilihanUser2){
@@ -95,6 +108,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "2":
                                         jenis = "makanan basah adult 400 gr";
@@ -103,6 +117,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "3":
                                         jenis = "makanan kering kitten 400 gr";
@@ -111,6 +126,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "4":
                                         jenis = "makanan kering adult 400 gr";
@@ -119,27 +135,34 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     default:
                                     System.out.println("\nInput anda tidak ditemukan\nSilahkan pilih [1-4]");
-                                    System.exit(0);
+                                    cek = true;
                                 }
+                            }
                             break;
                         default:
                          System.out.println("\nInput anda tidak ditemukan\nSilahkan pilih [1-2]");
-                         System.exit(0);
+                         
+                    }
                     }
                     tampilkanData(pilihan, hewan, jenis, totalHarga, jumlah1, harga);
                     break;
                 case "2":
                     pilihan = "Aksesoris";
                     pilihHewan();
+                    while(cek){
+
                     System.out.print("\n\nPilihan anda: ");
                      pilihanUserHewan = terminalInput.next();
                      switch (pilihanUserHewan){
                         case "1":
                             hewan = "Anjing";
                             aksesorisAnjing();
+                            while(cek){
+
                             System.out.print("\n\nPilihan anda: ");
                             pilihanUser2 = terminalInput.next();
                                 switch (pilihanUser2){
@@ -150,6 +173,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "2":
                                         jenis = "Kacamata";
@@ -158,6 +182,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "3":
                                         jenis = "Kandang";
@@ -166,15 +191,19 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     default:
                                     System.out.println("\nInput anda tidak ditemukan\nSilahkan pilih [1-3]");
-                                    System.exit(0);
+                                    cek = true;
                                 }
+                            }
                             break;
                         case "2":
                             hewan = "Kucing";
                             aksesorisKucing();
+                            while(cek){
+
                             System.out.print("\n\nPilihan anda: ");
                             pilihanUser2 = terminalInput.next();
                             switch (pilihanUser2){
@@ -185,6 +214,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "2":
                                         jenis = "Kacamata";
@@ -193,6 +223,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "3":
                                         jenis = "Kandang";
@@ -201,15 +232,18 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     default:
                                     System.out.println("\nInput anda tidak ditemukan\nSilahkan pilih [1-4]");
-                                    System.exit(0);
+                                    cek = true;
                                 }
+                            }
                             break;
                         default:
                          System.out.println("\nInput anda tidak ditemukan\nSilahkan pilih [1-2]");
-                         System.exit(0);
+                         cek = true;
+                    }
                     }
                      tampilkanData(pilihan, hewan, jenis, totalHarga, jumlah1, harga);
                     // cari data
@@ -217,12 +251,16 @@ public class kelompok8B {
                 case "3":
                     pilihan = "Perawatan";
                     pilihHewan();
+                    while(cek){
+                        
                     System.out.print("\n\nPilihan anda: ");
                     pilihanUserHewan = terminalInput.next();
                     switch (pilihanUserHewan){
                         case "1":
                             hewan = "Anjing";
                             perawatanAnjing();
+                            while(cek){
+
                             System.out.print("\n\nPilihan anda: ");
                             pilihanUser2 = terminalInput.next();
                                     switch (pilihanUser2){
@@ -233,6 +271,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "2":
                                         jenis = "Steril";
@@ -241,6 +280,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "3":
                                         jenis = "Grooming";
@@ -249,6 +289,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "4":
                                         jenis = "Melahirkan";
@@ -257,6 +298,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "5":
                                         jenis = "Suntik Rabies";
@@ -265,6 +307,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "6":
                                         jenis = "Suntik Jamur";
@@ -273,15 +316,19 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     default:
                                     System.out.println("\nInput anda tidak ditemukan\nSilahkan pilih [1-6]");
-                                    System.exit(0);
+                                    cek = true;
                                 }
+                            }
                             break;
                         case "2":
                             hewan = "Kucing";
                             perawatanKucing();
+                            while(cek){
+
                             System.out.print("\n\nPilihan anda: ");
                             pilihanUser2 = terminalInput.next();
                             switch (pilihanUser2){
@@ -292,6 +339,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "2":
                                         jenis = "Steril";
@@ -300,6 +348,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "3":
                                         jenis = "Grooming";
@@ -308,6 +357,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "4":
                                         jenis = "Melahirkan";
@@ -316,6 +366,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "5":
                                         jenis = "Suntik Rabies";
@@ -324,6 +375,7 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     case "6":
                                         jenis = "Suntik Jamur";
@@ -332,21 +384,26 @@ public class kelompok8B {
                                         jumlah = terminalInput2.nextInt();
                                         jumlah1 = "" + jumlah;
                                         totalHarga = "Rp. " + hitung(harga, jumlah);
+                                        cek = false;
                                     break;
                                     default:
                                     System.out.println("\nInput anda tidak ditemukan\nSilahkan pilih [1-6]");
-                                    System.exit(0);
+                                    cek = true;
                                 }
+                            }
                             break;
                         default:
                          System.out.println("\nInput anda tidak ditemukan\nSilahkan pilih [1-2]");
+                        cek = true;
+                    }
                     }
                     tampilkanData(pilihan, hewan, jenis, totalHarga, jumlah1, harga);
                     break;
              
                 default:
                     System.out.println("\nInput anda tidak ditemukan\nSilahkan pilih [1-3]");
-                    System.exit(0);
+                    cek = true;
+            }
             }
 
             isLanjutkan = getYesorNo("Apakah Anda ingin mengubah data pembelian??");
@@ -357,9 +414,13 @@ public class kelompok8B {
             System.out.println("==============[Terimakasih telah mengunjungi toko kami]==============");
             System.exit(0);
         }
-        System.out.println("Metode pembayaran:");
-        System.out.println("1.Pembayaran ditempat");
+        System.out.println("\nMetode pembayaran:");
+        System.out.println("1.Pembayaran ditempat (Cash)");
         System.out.println("2.kartu kredit");
+        cek = true;
+            while (cek){
+
+
         System.out.print("\n\nPilihan anda: ");
         pilihanPembayaran = terminalInput.next();
         switch(pilihanPembayaran){
@@ -369,9 +430,10 @@ public class kelompok8B {
                 System.out.println("\nTOTAL HARGA = " + totalHarga );
                 System.out.println("");
                 tatacaraPembayaran1();
+              cek = false;
                 break;
             case "2":
-                boolean cek = true;
+                cek = true;
                 while(cek){
                     plilihanBANK();
                     System.out.print("\n\nPilihan anda: ");
@@ -388,8 +450,14 @@ public class kelompok8B {
                     cek = true;
                     }
                 }
+                    cek = false;
                 break;
-        }
+                default:
+                System.out.println("Pilihan Tidak Tersedia");
+                cek = true; 
+                break;
+
+        }}
 
 //baru
          System.out.println("\n==============[Terimakasih telah mengunjungi toko kami]==============");
